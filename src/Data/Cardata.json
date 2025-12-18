@@ -1,0 +1,234 @@
+{"Cardata":[
+  {
+    "id": 1,
+    "name": "Toyota Corolla",
+    "brand": "Toyota",
+    "fuel": "Petrol",
+    "gearbox": "Automatic",
+    "rentPerDay": 55,
+    "airCondition": "Yes",
+    "doors": 4,
+    "distance" : 500,
+    "seats": 5,
+    "carimage":"https://scene7.toyota.eu/is/image/toyotaeurope/COR0004b_25_WEB_crop:Large-Landscape?ts=0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=png-alpha",
+    "category": "Sedan",
+    "equipments": [
+      "Airbags & Seatbelts",
+      "ABS",
+      "Stability Control",
+      "Apple CarPlay",
+      "Android Auto",
+      "Automatic Climate Control",
+      "Built-in GPS",
+      "Smart Key"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Honda Civic",
+    "brand": "Honda",
+    "fuel": "Hybrid",
+    "gearbox": "Automatic",
+    "rentPerDay": 70,
+    "airCondition": "Yes",
+    "doors": 4,
+    "distance" : 900,
+    "seats": 5,
+    "carimage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVDgUjkyDBVWBhTnM9rEABBhQy9A5dHaRfGQ&s",
+    "category": "Sedan",
+    "equipments": [
+      "Airbags & Seatbelts",
+      "ABS",
+      "Stability Control",
+      "Adaptive Cruise Control",
+      "Apple CarPlay",
+      "Android Auto",
+      "Touchscreen",
+      "Smart Key"
+    ]
+  },
+
+  {
+    "id": 3,
+    "name": "BMW 4 Series Convertible",
+    "brand": "BMW",
+    "fuel": "Petrol",
+    "gearbox": "Automatic",
+    "rentPerDay": 150,
+    "airCondition": "Yes",
+    "doors": 2,
+    "distance" : 800,
+    "seats": 4,
+    "carimage":"https://static0.carbuzzimages.com/wordpress/wp-content/uploads/gallery-images/original/1224000/700/1224764.jpg?q=50&fit=contain&w=3000&h=2000&dpr=1.5",
+    "category": "Cabriolet",
+    "equipments": [
+      "Airbags & Seatbelts",
+      "ABS",
+      "Stability Control",
+      "Blind Spot Monitoring",
+      "Apple CarPlay",
+      "Android Auto",
+      "Heated Seats",
+      "Automatic Climate Control"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Audi A5 Cabriolet",
+    "brand": "Audi",
+    "fuel": "Hybrid",
+    "gearbox": "Automatic",
+    "rentPerDay": 160,
+    "airCondition": "Yes",
+    "doors": 2,
+    "distance" : 700,
+    "seats": 4,
+    "carimage":"https://www.shutterstock.com/image-photo/alicante-spain-mart-23-2023-600nw-2442510071.jpg",
+    "category": "Cabriolet",
+    "equipments": [
+      "Airbags & Seatbelts",
+      "ABS",
+      "Stability Control",
+      "Blind Spot Monitoring",
+      "Built-in GPS",
+      "Heated Steering Wheel",
+      "Smart Key"
+    ]
+  },
+
+  {
+    "id": 5,
+    "name": "Ford Ranger",
+    "brand": "Ford",
+    "fuel": "Diesel",
+    "gearbox": "Manual",
+    "rentPerDay": 90,
+    "airCondition": "Yes",
+    "doors": 4,
+    "carimage":"https://www.shutterstock.com/image-illustration/szczecin-polandjanuary-2023new-ford-ranger-260nw-2267626767.jpg",
+    "distance" : 600,
+    "seats": 5,
+    "category": "Pickup",
+    "equipments": [
+      "Airbags & Seatbelts",
+      "ABS",
+      "Stability Control",
+      "Touchscreen",
+      "Built-in GPS"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Toyota Hilux",
+    "brand": "Toyota",
+    "fuel": "Diesel",
+    "gearbox": "Manual",
+    "rentPerDay": 85,
+    "airCondition": "Yes",
+    "doors": 4,
+    "distance" : 500,
+    "seats": 5,
+    "carimage":"https://global.toyota/pages/models/images/20191018/kv/hilux_w610_01.jpg",
+    "category": "Pickup",
+    "equipments": [
+      "Airbags & Seatbelts",
+      "ABS",
+      "Blind Spot Monitoring",
+      "Android Auto",
+      "Automatic Climate Control"
+    ]
+  },
+
+  {
+    "id": 7,
+    "name": "Toyota Land Cruiser",
+    "brand": "Toyota",
+    "fuel": "Petrol",
+    "gearbox": "Automatic",
+    "rentPerDay": 200,
+    "airCondition": "Yes",
+    "doors": 5,
+    "distance" : 400,
+    "seats": 7,
+    "carimage":"https://images.unsplash.com/photo-1650530579355-7ad9d4766043?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG95b3RhJTIwbGFuZCUyMGNydWlzZXJ8ZW58MHx8MHx8fDA%3D",
+    "category": "Suv",
+    "equipments": [
+      "Airbags & Seatbelts",
+      "ABS",
+      "Stability Control",
+      "Adaptive Cruise Control",
+      "Touchscreen",
+      "Apple CarPlay",
+      "Built-in GPS",
+      "Heated Seats"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Kia Sportage",
+    "brand": "Kia",
+    "fuel": "Petrol",
+    "gearbox": "Automatic",
+    "rentPerDay": 100,
+    "airCondition": "Yes",
+    "doors": 5,
+    "distance" : 800,
+    "seats": 5,
+    "carimage":"https://www.kia.com/content/dam/kia/us/en/vehicles/sportage/2026/mep/in-page-gallery/my26-sportage-ice-mep-gallery-1.jpg",
+    "category": "Suv",
+    "equipments": [
+      "Airbags & Seatbelts",
+      "ABS",
+      "Stability Control",
+      "Apple CarPlay",
+      "Android Auto",
+      "Smart Key",
+      "Automatic Climate Control"
+    ]
+  },
+
+  {
+    "id": 9,
+    "name": "Toyota Sienna",
+    "brand": "Toyota",
+    "fuel": "Hybrid",
+    "gearbox": "Automatic",
+    "rentPerDay": 120,
+    "airCondition": "Yes",
+    "doors": 5,
+    "distance" : 700,
+    "seats": 7,
+    "carimage":"https://media.ed.edmunds-media.com/toyota/sienna/2025/oem/2025_toyota_sienna_passenger-minivan_platinum-7-passenger_fq_oem_1_1280.jpg",
+    "category": "Minivan",
+    "equipments": [
+      "Airbags & Seatbelts",
+      "ABS",
+      "Stability Control",
+      "Built-in GPS",
+      "Apple CarPlay",
+      "Android Auto"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Honda Odyssey",
+    "brand": "Honda",
+    "fuel": "Petrol",
+    "gearbox": "Automatic",
+    "rentPerDay": 110,
+    "airCondition": "Yes",
+    "doors": 5,
+    "distance" : 600,
+    "seats": 7,
+    "carimage":"https://imgcdn.zigwheels.ph/large/gallery/exterior/11/69/honda-odyssey-front-angle-low-view-782428.jpg",
+    "category": "Minivan",
+    "equipments": [
+      "Airbags & Seatbelts",
+      "ABS",
+      "Stability Control",
+      "Automatic Climate Control",
+      "Touchscreen",
+      "Smart Key"
+    ]
+  }
+]}

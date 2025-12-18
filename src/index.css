@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --bluemagenta: #5937e0;
+  --darkyellow: #f59e0b;
+
+  --black: #000000;
+  --white: #ffffff;
+  --lightwhite :#FAFAFA;
+  --lightgray: #F9F9F9;
+
+  /* Fonts */
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+  --font-work: "Work Sans", sans-serif;
+}
+
+@layer utilities {
+ 
+}
+
+@layer utilities {
+  .font-Poppins{
+    --font-family: var(--font-heading)
+  }
+  .font-Inter {
+    font-family: var(--font-sans);
+  }
+  .font-work {
+   font-family: var(--font-work);
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+  .col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+  .abs-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+}
