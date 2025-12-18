@@ -105,11 +105,11 @@ const Details_Cars = ({}: Props) => {
             </Typography>
 
             <div className='flex flex-col gap-2 w-full sm:w-[65%] justify-between'>
-              {car.equipments.map((equipment, index) => (
+              {car.equipments.map((equipment:string, index:number) => (
                 <Cardetail2 key={index} text={equipment} />
               ))}
             </div>
-          </div>
+          </div>  
         </div>
       </div>
     </>

@@ -71,6 +71,10 @@ export interface CarType {
   category: string;
   equipments: string[];
 }
+
+export interface CarApiResponse {
+  Cardata: CarType[];
+}
 export type Car_detail_cardProps ={
   id: number |string;
   name?:string,

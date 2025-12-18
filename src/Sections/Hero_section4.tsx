@@ -3,6 +3,7 @@ import Typography from "../Layouts/Typography";
 import rightarrowicon from "../assets/arrow-right-icon.svg";
 import cardata from "../Data/Cardata.json";
 import { Link } from "react-router-dom";
+import type { CarType } from "../Types/Alltype";
 type Props = {};
 
 const Hero_section4 = ({}: Props) => {
@@ -26,7 +27,7 @@ const Hero_section4 = ({}: Props) => {
         </div>
 
         <div className='flex-center gap-5 flex-wrap pt-5'>
-          {cardata.slice(0, 6).map((car) => (
+          {cardata.slice(0, 6).map((car:CarType) => (
             <Car_details_card
               key={car.id}
               id={car.id}
