@@ -12,9 +12,9 @@ type Props = {
 const Reviews_card = ({ img, text1, text2, text3 }: Props) => {
   return (
     <>
-      <div className='w-full'>
-        <div className='h-[50vh] sm:h-[75vh]  rounded-2xl overflow-hidden'>
-          <div className='h-[75%] w-full bg-(--lightgray) flex items-center justify-center text-center px-2 relative'>
+      <div className='w-full h-full'>
+        <div className='h-full bg-red-500 rounded-2xl overflow-hidden flex flex-col'>
+          <div className='py-20 sm:py-28 grow w-full bg-(--lightgray) flex items-center justify-center text-center px-2 relative'>
             <img className='absolute top-7 left-10' src={img2} alt='' />
             <Typography
               variant='Hero_section3-heading'
@@ -22,7 +22,7 @@ const Reviews_card = ({ img, text1, text2, text3 }: Props) => {
               {text1}
             </Typography>
           </div>
-          <div className='h-[25%] w-full bg-(--bluemagenta) text-center justify-end flex flex-col text-white relative pb-3'>
+          <div className='py-12  w-full bg-(--bluemagenta) text-center justify-end flex flex-col text-white relative pb-3'>
             <img
               className='absolute -top-10 left-1/2 -translate-x-1/2'
               src={img}

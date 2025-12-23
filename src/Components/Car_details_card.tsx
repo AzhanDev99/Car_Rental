@@ -12,11 +12,11 @@ const Car_details_card = ({id,name,gearbox,rentperday,aircondition,category,cari
   const navigate = useNavigate();
   return (
     <>
-      <div className='bg-[#FAFAFA] p-2 flex flex-col  items-center justify-between rounded-2xl gap-8 sm:w-[30%] w-full h-fit sm:h-[85vh] scale-100 hover:scale-105 hover:bg-black/10 hover:border transition-all duration-300 '>
+      <div className='bg-[#FAFAFA] p-2 flex flex-col items-center justify-between rounded-2xl gap-8 sm:w-[30%] w-full h-fit sm:h-fit scale-100 hover:scale-105 hover:bg-black/10 hover:border transition-all duration-300 '>
         <img className='h-[30vh] sm:w-[40vw] flex-center rounded-2xl object-cover' src={carimage} alt='' />
         <div className='flex-between w-full'>
           <div>
-            <Typography variant="cardetail_card_noramltext">{name}</Typography>
+            <Typography variant="cardetail_card_noramltext" className="whitespace-nowrap">{name}</Typography>
             <Typography variant="cardetail_card_smalltext">{category}</Typography>
           </div>
           <div>
