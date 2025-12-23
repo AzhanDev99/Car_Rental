@@ -2,9 +2,11 @@ import Seacrch from "../Components/Seacrch";
 import Typography from "../Layouts/Typography";
 import Car from "../assets/car(3) 1.png";
 import Group6 from "../assets/Group (6).png";
+import { Home_content } from "../Contants/home.content";
 type Props = {};
 
 const Hero_section7 = ({}: Props) => {
+  const { HomeSection7 } = Home_content;
   return (
     <>
       <div className='h-fit w-full bg-(--bluemagenta) flex flex-col sm:flex-row items-center gap-0 sm:gap-10 relative overflow-hidden rounded-2xl mb-20 pt-10 sm:pt-0'>
@@ -13,15 +15,14 @@ const Hero_section7 = ({}: Props) => {
           <Typography
             variant='Hero_section4-mainheading'
             className='text-white leading-none text-center sm:text-start'>
-            Enjoy every mile with adorable companionship.
+            {HomeSection7.Heading}
           </Typography>
           <Typography
             variant='cardetail_card_smalltext'
             className='text-white whitespace-normal! w-full sm:w-[85%] text-center sm:text-start'>
-            Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien
-            bibendum ullamcorper in. Diam tincidunt tincidunt erat
+            {HomeSection7.paragraph}
           </Typography>
-          <div className="hidden sm:block">
+          <div className='hidden sm:block'>
             <Seacrch />
           </div>
         </div>

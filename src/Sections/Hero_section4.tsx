@@ -4,18 +4,19 @@ import rightarrowicon from "../assets/arrow-right-icon.svg";
 import cardata from "../Data/Cardata.json";
 import { Link } from "react-router-dom";
 import type { CarType } from "../Types/Alltype";
+import { Home_content } from "../Contants/home.content";
 type Props = {};
 
+
 const Hero_section4 = ({}: Props) => {
+  const {HomeSection4} =Home_content
   return (
     <>
       <div className='py-5 w-full px-2 sm:px-0'>
         <div className='flex justify-between items-center sm:items-end'>
-          <Typography variant='Hero_section4-mainheading'className="hidden sm:block" >
-            Choose the car that <br /> suits you
+          <Typography variant='Hero_section4-mainheading'className=" w-[60%] sm:w-[50%] uppercase sm:normal-case max-sm:text-2xl!" >
+            {HomeSection4.heading}
           </Typography>
-          <Typography variant='Hero_section4-mainheading' className="block sm:hidden text-2xl! uppercase">
-            Choose the car<br /> that suits you</Typography>
           <Link to={"./Vehicle"}>
             <div className='flex gap-3 cursor-pointer hover:bg-black/60 hover:p-3 transition-all duration-300 hover:text-white hover:text-xl hover:font-semibold rounded-2xl'>
               <Typography>

@@ -2,35 +2,27 @@ import Typography from "../Layouts/Typography";
 import dummymobile from "../assets/Dummymobile.svg";
 import Appledownload from "../assets/Appledownload.svg";
 import GooglePlaydownload from "../assets/GooglePlaydownload.svg";
+import { Home_content } from "../Contants/home.content";
 
 type Props = {};
 
 const Hero_section6 = ({}: Props) => {
+  const {HomeSection6} = Home_content
   return (
     <>
-      <div className='sm:flex items-center px-3 sm:px-0 sm:pl-20 gap-30 py-10 sm:py-40'>
-        <div className='gap-7 flex flex-col'>
+      <div className='sm:flex items-center justify-between px-3 sm:px-0 sm:pl-20 gap-10 py-10 sm:py-40'>
+        <div className='w-full sm:w-[50%] gap-7 flex flex-col justify-start'>
           <Typography
             variant='Hero_section4-mainheading'
-            className='leading-8 sm:leading-15 text-[30px] sm:text-[50px]'>
-            Download <br /> mobile app
+            className='leading-8 sm:leading-15 text-[30px] sm:text-[50px] w-[60%]'>
+            {HomeSection6.heading}
           </Typography>
           <Typography
             variant='cardetail_card_smalltext'
-            className='hidden sm:block'>
-            Imperdiet ut tristique viverra nunc. Ultrices orci vel auctor cursus
-            <br /> turpis nibh placerat massa. Fermentum urna ut at et in.
-            Turpis <br /> aliquet cras hendrerit enim condimentum. Condimentum
-            interdum <br /> risus bibendum urna
+            className='whitespace-normal! pr-5 sm:pr-0 '>
+            {HomeSection6.paragraph}
           </Typography>
-          <Typography
-            variant='cardetail_card_smalltext'
-            className=' sm:hidden block whitespace-normal!'>
-            Imperdiet ut tristique viverra nunc. Ultrices orci vel auctor cursus
-            turpis nibh placerat massa. Fermentum urna ut at et in. Turpis
-            aliquet cras hendrerit enim condimentum. Condimentum interdum risus
-            bibendum urna
-          </Typography>
+        
           <div className='flex gap-5'>
             <a
               href='https://www.apple.com/itunes/'
@@ -55,12 +47,12 @@ const Hero_section6 = ({}: Props) => {
           </div>
         </div>
 
-        <div className='flex relative  pt-20 sm:pt-0'>
-          <img src={dummymobile} alt='' className='z-10 w-[50%] sm:w-full ml-10 sm:ml-0' />
+        <div className='flex relative pt-20 sm:pt-0 sm:w-[50%] sm:items-center sm:justify-center'>
+          <img src={dummymobile} alt='' className='z-10 w-[60%] sm:w-[50%] ml-10 sm:ml-0' />
           <img
             src={dummymobile}
             alt=''
-            className='absolute bottom-15 left-40 sm:left-40 z-0 w-[50%] sm:w-full'
+            className='absolute bottom-15 left-35 sm:left-60 z-0 w-[60%] sm:w-[50%]'
           />
         </div>
       </div>

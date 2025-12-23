@@ -3,34 +3,34 @@ import Hero_form from "../Components/Forms/Hero_form";
 import Herocar_img from "../assets/Img.svg";
 import Typography from "../Layouts/Typography";
 import herobgimg from "../assets/Hero-bg.png";
+import { Home_content } from "../Contants/home.content";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
 const Herosection = ({}: Props) => {
+  const { Hero } = Home_content;
   return (
     <>
       <div className='bg-(--bluemagenta) pt-30 sm:pt-10 pb-15 rounded-3xl relative overflow-hidden'>
-        <div className='flex flex-col sm:flex-row  justify-between sm:px-20 items-center z-10 relative'>
-          <div className='flex-col gap-7 flex px-2 sm:px-0 items-center sm:items-start'>
-            <Typography variant='Hero-heading' className="hidden sm:block">
-              Experience the road <br /> like never before
+        <div className='flex flex-col sm:flex-row  justify-between sm:px-20 items-center z-10 relative w-full '>
+          <div className='flex-col gap-7 flex px-2 sm:px-0 items-center sm:items-start sm:w-[50%] w-full '>
+            <Typography
+              variant='Hero-heading'
+              className='sm:block uppercase sm:normal-case max-sm:text-2xl!  text-center sm:text-start'>
+              {Hero.heading}
             </Typography>
-            <Typography variant='Hero-heading' className="sm:hidden uppercase text-center">
-              Experience the road like never before
+            <Typography
+              variant='Hero-paragraph'
+              className='sm:px-0 px-10 text-center sm:text-start'>
+              {Hero.paragraph}
             </Typography>
-            <Typography variant='Hero-paragraph' className="hidden sm:block">
-              Aliquam adipiscing velit semper morbi. Purus non eu <br /> cursus
-              porttitor tristique et gravida. Quis nunc interdum <br /> gravida
-              ullamcorper
-            </Typography>
-            <Typography variant='Hero-paragraph' className="block sm:hidden text-center">
-              Aliquam adipiscing velit semper morbi. Purus non eu cursus
-              porttitor tristique et gravida. Quis nunc interdum gravida
-              ullamcorper
-            </Typography>
-            <Yellowbg_button text='View all cars' />
+            <Link to={"./Vehicle"}>
+              {" "}
+              <Yellowbg_button text='View all cars' />
+            </Link>
           </div>
-          <div className="sm:px-0 px-4">
+          <div className='sm:px-0 px-4'>
             <Hero_form className1='bg-white' />
           </div>
         </div>

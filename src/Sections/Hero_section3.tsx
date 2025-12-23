@@ -1,47 +1,43 @@
 import Hero_section3_card from "../Components/Hero_section3_card";
+import { Home_content } from "../Contants/home.content";
+import Car from "../assets/car(3) 1.png";
+
 
 type Props = {};
 
 const Hero_section3 = ({}: Props) => {
-  const paragraph1 =
-    "Non amet fermentum est in enim at sit ullamcorper. Sit elementum rhoncus nullam feugiat. Risus sem fermentum dui ornare praesent. Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper sed integer. Quisque eleifend tincidunt vulputate libero at nulla nibh quis. Quis neque donec est scelerisque lectus bibendum. Ut a a donec ante in venenatis. Risus tortor adipiscing eget enim.";
-  const paragraph2 =
-    "Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper";
-  const paragraph3 =
-    "Viverra scelerisque mauris et nullam molestie et. Augue adipiscing praesent nisl cras nunc luctus viverra nisi";
-  const paragraph4 =
-    "Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper sed integer. Quisque eleifend tincidunt vulputate libero ";
 
+  const {HomeSection3} = Home_content
   return (
     <>
       <div className='w-full flex-center '>
         <p className='w-[95%] text-center h-1 bg-gray-300 sm:hidden block'> </p>
       </div>
-      <div className='w-full py-10 sm:py-24 flex gap-48 '>
-        <div className='w-[50%] h-full bg-yellow-500 hidden sm:block'>
-          <p>lorem10</p>
+      <div className='w-full py-15 sm:py-24 flex gap-48 '>
+        <div className='w-[50%] h-full bg-(--bluemagenta) py-10 rounded-3xl items-center justify-center hidden sm:flex'>
+          <img className='w-[80%] hidden sm:block ' src={Car} alt='' />
         </div>
 
         <div className='w-full sm:w-[50%] px-4 sm:px-0 gap-8 flex flex-col'>
           <Hero_section3_card
             paragraphnumber={1}
-            heading='Erat at semper'
-            paragraph={paragraph1}
+            heading={HomeSection3.heading1}
+            paragraph={HomeSection3.paragraph1}
           />
           <Hero_section3_card
             paragraphnumber={2}
-            heading='Urna nec vivamus risus duis arcu'
-            paragraph={paragraph2}
+            heading={HomeSection3.heading2}
+            paragraph={HomeSection3.paragraph2}
           />
           <Hero_section3_card
             paragraphnumber={3}
-            heading='Lobortis euismod imperdiet tempus'
-            paragraph={paragraph3}
+            heading={HomeSection3.heading3}
+            paragraph={HomeSection3.paragraph3}
           />
           <Hero_section3_card
             paragraphnumber={4}
-            heading='Cras nulla aliquet nam eleifend amet et'
-            paragraph={paragraph4}
+            heading={HomeSection3.heading4}
+            paragraph={HomeSection3.paragraph4}
           />
         </div>
       </div>

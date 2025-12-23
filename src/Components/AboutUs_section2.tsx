@@ -1,9 +1,11 @@
 import img from "../assets/Aboutimg1.png";
 import AboutUsComp1 from "./AboutUsComp1";
+import { aboutContent } from "../Contants/about.content";
 
 type Props = {};
 
 const AboutUs_section2 = ({}: Props) => {
+  const {aboutsection2} = aboutContent
   return (
     <>
       <div>
@@ -11,9 +13,9 @@ const AboutUs_section2 = ({}: Props) => {
           <img className='w-full h-full mb-20 sm:mb-0 object-cover rounded-4xl ' src={img} alt='' />
         </div>
         <div className='w-full h-fit sm:py-5 flex sm:justify-between mt-10 sm:px-20 flex-wrap items-center justify-center   '>
-          <AboutUsComp1 text1='20k+' text2='Happy customers' />
-          <AboutUsComp1 text1='540+' text2='Count of Cars' />
-          <AboutUsComp1 text1='25+' text2='Years of experience' />
+          <AboutUsComp1 text1={aboutsection2.card1.Heading} text2={aboutsection2.card1.paragraph} />
+          <AboutUsComp1 text1={aboutsection2.card2.Heading} text2={aboutsection2.card2.paragraph} />
+          <AboutUsComp1 text1={aboutsection2.card3.Heading} text2={aboutsection2.card3.paragraph} />
         </div>
       </div>
     </>

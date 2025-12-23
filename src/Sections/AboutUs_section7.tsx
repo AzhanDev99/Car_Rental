@@ -2,10 +2,12 @@ import Yellowbg_button from "../Components/Buttons/Yellowbg_button";
 import Typography from "../Layouts/Typography";
 import Car from "../assets/Blurcarimg.png";
 import Group6 from "../assets/Group (6).png";
+import { aboutContent } from "../Contants/about.content";
 
 type Props = {};
 
 const AboutUs_section7 = ({}: Props) => {
+  const {aboutsection7} = aboutContent
   return (
     <>
       <>
@@ -15,15 +17,12 @@ const AboutUs_section7 = ({}: Props) => {
           <div className='w-full  px-8 relative gap-7 items-start flex flex-col'>
             <Typography
               variant='Hero_section4-mainheading'
-              className='text-white leading-none'>
-              Looking for a car? <br />
-              +537 547-6401
+              className='text-white leading-none w-[80%] sm:w-[65%]'>
+              {aboutsection7.Heading}
             </Typography>
             <Typography
               variant='cardetail_card_smalltext'
-              className='text-white whitespace-normal! w-[85%]'>
-              Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien
-              bibendum ullamcorper i
+              className='text-white whitespace-normal! w-[85%]'>{aboutsection7.paragraph}
             </Typography>
             <Yellowbg_button text='Shop now' />
           </div>

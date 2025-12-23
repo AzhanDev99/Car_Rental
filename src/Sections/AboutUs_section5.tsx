@@ -1,10 +1,12 @@
 import Page_Headings from "../Components/Page_Headings";
 import Reviews_card from "../Components/Reviews_card";
 import img from "../assets/Reviewsblur.png";
+import { aboutContent } from "../Contants/about.content";
 
 type Props = {};
 
 const AboutUs_section5 = ({}: Props) => {
+  const {aboutsection5} = aboutContent
   return (
     <>
       <div className='mt-20 flex flex-col items-center '>
@@ -12,23 +14,21 @@ const AboutUs_section5 = ({}: Props) => {
         <div className="flex flex-col sm:flex-row mt-10 justify-between w-full gap-5 ">
           <Reviews_card
             img={img}
-            text1='Et aliquet netus at sapien pellentesque mollis nec dignissim
-              maecenas. Amet erat volutpat quisque odio purus feugiat. In
-              gravida neque'
-            text2='Kuphal LLC'
-            text3='Emanuel Boyle'
+            text1={aboutsection5.review1.para}
+            text2={aboutsection5.review1.company}
+            text3={aboutsection5.review1.name}
           />
           <Reviews_card
             img={img}
-            text1=' Purus consectetur varius quis urna phasellus enim mattis. Sem tincidunt tortor nunc egestas amet adipiscing ligula'
-            text2='Glover - Orn'
-            text3='River Graves'
+            text1={aboutsection5.review2.para}
+            text2={aboutsection5.review2.company}
+            text3={aboutsection5.review2.name}
           />
           <Reviews_card
             img={img}
-            text1=' Quam neque odio urna euismod felis. Sit egestas magna in quisque famesdapibus quis sapien magna. Nisl non eget sit pellentesque tristique et'
-            text2='Haag LLC'
-            text3='Ryder Malone'
+            text1={aboutsection5.review3.para}
+            text2={aboutsection5.review3.company}
+            text3={aboutsection5.review3.name}
           />
         </div>
       </div>

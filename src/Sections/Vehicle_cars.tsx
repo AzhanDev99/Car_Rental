@@ -14,6 +14,7 @@ function Vehicle_cars({ activeVehicle }: any) {
             key={car.id}
             id={car.id}
             name={car.name}
+            carimage={car.carimage}
             category={car.category}
             rentperday={car.rentPerDay}
             gearbox={car.gearbox}
