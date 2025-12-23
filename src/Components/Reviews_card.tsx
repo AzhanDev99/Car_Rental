@@ -13,7 +13,7 @@ const Reviews_card = ({ img, text1, text2, text3 }: Props) => {
   return (
     <>
       <div className='w-full h-full'>
-        <div className='h-full bg-red-500 rounded-2xl overflow-hidden flex flex-col'>
+        <div className='h-full rounded-2xl overflow-hidden flex flex-col'>
           <div className='py-20 sm:py-28 grow w-full bg-(--lightgray) flex items-center justify-center text-center px-2 relative'>
             <img className='absolute top-7 left-10' src={img2} alt='' />
             <Typography
